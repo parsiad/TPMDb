@@ -1,0 +1,24 @@
+{
+  "name": "TPMDb",
+  "version": "0.1.0",
+  "description": "View movie information directly in The Pirate Bay.",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "parse-torrent-name": "^0.5.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^1.5.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-template": "^1.0.0",
+    "load-grunt-tasks": "^5.0.0"
+  },
+  "scripts": {
+    "build": "grunt build"
+  },
+  "license": "ISC"
+}

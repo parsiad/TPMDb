@@ -1,0 +1,30 @@
+dl {
+  color: #4e5456;
+  margin: 5px 0;
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  font-weight: bold;
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+dd.rating_text {
+  font-weight: bold;
+}
+
+.score {
+  font-size: 125%;
+}
+
+#omdb_missing {
+  margin: 0 0 10px;
+  padding: 10px;
+  background: #ff6;
+  font-weight: bold
+}
