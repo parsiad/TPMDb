@@ -60,16 +60,17 @@ function get_list(api_key, obj) {
 }
 
 chrome.storage.local.get("api_key", function(result) {
+  matches = $("div#content div#main-content table#searchResult div.detName a")
   if(result.api_key) {
     // API key found.
-    $(".detName a").each(function(index, obj) {
+    matches.each(function(index, obj) {
       get_list(result.api_key, obj);
     });
-  } else {
+  } else if(matches.length) {
     // API key not found.
     let options_url = chrome.extension.getURL("options.html");
-    $("body").prepend("<p id=\"omdb_missing\">Oops! I was unable to fetch " +
-        "movie information. Have you <a target=\"_blank\" href=\"" +
+    $("body").prepend("<p id=\"omdb_missing\">TPMDb: Oops! I was unable to " +
+        "fetch movie information. Have you <a target=\"_blank\" href=\"" +
         options_url + "\">visited the configuration page</a> yet?</p>");
   }
 });

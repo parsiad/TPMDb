@@ -7,7 +7,7 @@
   "web_accessible_resources": ["options.html"],
   "permissions": ["storage"],
   "content_scripts": [{
-    "matches": ["https://*.thepiratebay.org/*"],
+    "matches": ["https://*/*"],
     "run_at": "document_idle",
     "js": ["content.js"],
     "css": ["content.min.css"]
