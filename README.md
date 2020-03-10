@@ -2,6 +2,8 @@
 
 TPMDb is a Chrome extension that lets you view movie information directly in The Pirate Bay.
 
+![](screenshot.png)
+
 ## Build and install from source
 
 1. Download a release or working copy.
